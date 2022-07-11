@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oner Portfolio</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- link items -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -126,7 +128,7 @@
 
     <section>
         <div class="projects">
-            <div class="projects-title">
+            <div class="projects-title" data-aos="zoom-out-down">
               <h2>I Love What I Do</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe laboriosa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo repellat non molestias odio, quidem facilis magni obcaecati eaque perspiciatis soluta! m quam sed nesciunt aut dolor expedita. Suscipit, ab hic.</p>
             </div>
@@ -136,16 +138,16 @@
               <input class="radio" id="three" name="group" type="radio">
               <input class="radio" id="four" name="group" type="radio">
               <div class="tabs">
-                <label class="tab" id="one-tab" for="one">All Projects</label>
-                <label class="tab" id="two-tab" for="two">Blogs</label>
-                <label class="tab" id="three-tab" for="three">Travels</label>
-                <label class="tab" id="four-tab" for="four">Foods</label>
+                <label class="tab" id="one-tab" for="one" data-aos="fade-right">All Projects</label>
+                <label class="tab" id="two-tab" for="two" data-aos="fade-up">Blogs</label>
+                <label class="tab" id="three-tab" for="three" data-aos="fade-down">Travels</label>
+                <label class="tab" id="four-tab" for="four" data-aos="fade-left">Foods</label>
               </div>
               <div class="panels">
                 <div class="panel" id="one-panel">
                   <div class="cards">
                     <div class="cols">
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="col" ontouchstart="this.classList.toggle('hover');" >
                           <div class="container">
                             <div class="front" style="background-image: url(https://unsplash.it/500/500/)" >
                               <div class="inner">
@@ -471,8 +473,8 @@
             </div>
           </div>
         
-        <div class="about-content-area" id="about-content-area">
-            <div class="about-image">
+        <div class="about-content-area" id="about-content-area" >
+            <div class="about-image" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
                 <div class="border-colors">
                     <img src="./img/about-img1.jpg" alt="">
                 </div>
@@ -504,12 +506,13 @@
         </div>
     </section>
 
-    <footer>
-        <div class="contact">
+    <footer >
+
+        <div class="contact" data-aos="zoom-in-down">
             <div class="contact-title">
                 <h1>Contact</h1>
             </div>
-            <div class="contact-content">
+            <div class="contact-content" >
                 <div class="contact-content-email">
                     <span class="email-title">
                         <h1>Just say Hello!</h1>
@@ -547,6 +550,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="copyright">
             <div class="copyright-social">
               <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -567,5 +571,11 @@
     <!-- JS  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+
+    <!-- AOS  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
