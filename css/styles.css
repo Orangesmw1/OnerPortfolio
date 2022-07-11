@@ -609,9 +609,7 @@ transform: translateX(0);
 	cursor: pointer;
 	color: black;
 	font-size: 17px;
-	position: relative;
-	z-index: 1;
-	transition: all 0.3s ease;
+
   border: 1px solid;
   border-radius: 3rem;
   margin: 0 10px;
@@ -623,33 +621,11 @@ transform: translateX(0);
 #travel:checked ~ nav label.travel
 {
 	color: #fff;
+  background-color: #35a22c;
 }
 
 input[type="radio"]{
 	display: none;
-}
-
-.wrapper nav .slider{
-	position: absolute;
-	height: 100%;
-	width: 95px;
-	background: #35a22c;
-	z-index: 0;
-	left: 10px;
-	bottom: 0;
-	transition: all 0.3s ease;
-  border-radius: 3rem;
-
-}
-
-#blog:checked ~ nav .slider{
-	left: 27%;
-}
-#landing:checked ~ nav .slider{
-	left: 52.2%;
-}
-#travel:checked ~ nav .slider{
-	left: 77.3%;
 }
 
 .block-content {
@@ -662,7 +638,6 @@ input[type="radio"]{
 	color: #fff;
 	padding: 1px 15px 15px 15px;
 	margin-top: 20px;
-  
 }
 
 .content .cards {
