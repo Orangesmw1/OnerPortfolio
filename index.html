@@ -19,16 +19,41 @@
     <header>  
         <nav>
             <div class="nav-container">
-                <h1>
-                    <i class="fab fa-battle-net"></i>
-                    Oner Portfolio
-                </h1>
+              <h1>
+                <i class="fab fa-battle-net"></i>
+                Oner Portfolio
+              </h1>
                 <div class="menu">
                     <a href="#" class="is-active">Home</a>
                     <a href="#">About</a>
                     <a href="#">Projects</a>
                     <a href="#">Contact</a>
+              </div>
+              <div class="dropdown">
+                <div class="dropdown-container">
+                  <button class="dropdown-button main-button">
+                    <span class="dropdown-title-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-border-width"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="dropdown-list-container">
+                    <div class="dropdown-list-wrapper">
+                      <ul class="dropdown-list"></ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </nav>
         <div class="carousel ">
@@ -117,7 +142,7 @@
                     <div class="carousel-item__info">
                         <div class="carousel-item__container">
                             <h2 class="carousel-item__subtitle">My Project</h2>
-                            <h1 class="carousel-item__title">Landing Page Food</h1>
+                            <h1 class="carousel-item__title">Landing Food</h1>
                             <p class="carousel-item__description">Food recommendations and blogs</p>
                             <a href="#" class="carousel-item__btn">Read more</a>
                         </div>
@@ -560,12 +585,12 @@
       <a href="#" class="cd-top text-replace js-cd-top"><i class="fa fa-caret-square-up"></i></a>
     </footer>
 
-
     
 
     <!-- JS  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script src="./js/number.js"></script>
     <script src="./js/back-to-top.js"></script>
 
