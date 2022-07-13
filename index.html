@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body onload="load()">
     <header>  
         <nav>
             <div class="nav-container">
@@ -476,19 +476,19 @@
         </div>
         <div class="skills">
             <div class="skills-item">
-              <span class="skills-number" data-count="3341">93</span>
+              <span class="skills-number" id='0101'></span>
               <h5>HTML</h5>
             </div>
             <div class="skills-item">
-              <span class="skills-number" data-count="3221">80</span>
+              <span class="skills-number" id='0102'></span>
               <h5>CSS</h5>
             </div>
             <div class="skills-item">
-              <span class="skills-number" data-count="9523">50</span>
+              <span class="skills-number" id='0103'></span>
               <h5>JS</h5>
             </div>
             <div class="skills-item">
-              <span class="skills-number" data-count="5521">50</span>
+              <span class="skills-number" id='0104'></span>
               <h5>React JS</h5>
             </div>
         </div>
@@ -497,11 +497,11 @@
 
     <footer >
 
-        <div class="contact" data-aos="zoom-in-down">
-            <div class="contact-title">
+      <div class="contact" data-aos="zoom-in-down">
+          <div class="contact-title">
                 <h1>Contact</h1>
-            </div>
-            <div class="contact-content" >
+          </div>
+          <div class="contact-content" >
                 <div class="contact-content-email">
                     <span class="email-title">
                         <h1>Just say Hello!</h1>
@@ -536,10 +536,10 @@
                         </ul>
                   </span>
                 </div>
-            </div>
-        </div>
+          </div>
+      </div>
         
-        <div class="copyright">
+      <div class="copyright">
             <div class="copyright-social">
               <a href=""><i class="fab fa-facebook-f"></i></a>
               <a href=""><i class="fab fa-twitter"></i></a>
@@ -554,13 +554,19 @@
               </p>
             </div>
       </div>
+
+      <!-- all your content here --> 
+      <a href="#" class="cd-top text-replace js-cd-top"><i class="fa fa-caret-square-up"></i></a>
     </footer>
 
+
+    
 
     <!-- JS  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
-
+    <script src="./js/number.js"></script>
+    <script src="./js/back-to-top.js"></script>
 
 
     <!-- AOS  -->
@@ -568,5 +574,7 @@
     <script>
       AOS.init();
     </script>
+
+    
 </body>
 </html>
