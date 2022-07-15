@@ -400,7 +400,6 @@ li.dropdown-list-item {
   margin: 15px 0 0 0;
   font-family: "Playfair Display", serif;
   font-size: 55px;
-  line-height: 45px;
   letter-spacing: 3px;
   font-weight: 700;
   color: #2c2c2c;
@@ -699,12 +698,12 @@ li.dropdown-list-item {
   }
 
   .carousel__nav {
-    left: 23%;
-    bottom: 5%;
+    left: 27%;
+    bottom: 0;
   }
 
   .carousel__icon {
-    width: 18px;
+    width: 15px;
   }
 
   .carousel-item__image {
@@ -721,6 +720,7 @@ li.dropdown-list-item {
     width: 55%;
 
     background-size: 190%;
+    background-position: center;
   }
 
   .carousel-item__container {
@@ -735,6 +735,7 @@ li.dropdown-list-item {
 
   .carousel-item__title {
     font-size: 1rem;
+    margin: 5px 0 0;
   }
 
   .carousel-item__description {
@@ -745,8 +746,8 @@ li.dropdown-list-item {
     display: block;
     font-size: 0.55rem;
     padding: 9px 7px;
-    width: 80%;
-    margin: 20px 0 10px;
+    width: 90%;
+    margin: 10px 0 0;
     text-align: center;
   }
 }
@@ -1396,7 +1397,7 @@ section {
   /* projects-title  */
   .projects-title {
     width: 85%;
-    margin-top: 50px;
+    margin: 50px 0 30px
   }
 
   .projects-title h2 {
@@ -1530,6 +1531,7 @@ section {
 
   .about-content-area .about-details div span {
     font-size: 1rem;
+    padding: 5px;
   }
 
   .about-image {
@@ -1676,8 +1678,10 @@ footer {
   height: 40px;
   border-radius: 15px;
   padding-left: 10px;
-  background-color: #7e7e7e;
-  border: #35a22c;
+  background-color: #2a262685;
+  border: black;
+  cursor: pointer;
+
 }
 
 .form-email input::placeholder {
@@ -1685,14 +1689,15 @@ footer {
 }
 
 .form-email textarea {
-  background-color: #7e7e7e;
-  border: #35a22c;
+  background-color: #2a262685;
   border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .form-email textarea::placeholder {
   color: #fff;
-  padding: 10px;
   font-size: 0.9rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -1702,12 +1707,21 @@ footer {
   display: none;
 }
 
+.mes2 {
+  display: none;
+}
+
 .form-email .submit {
   color: #fff;
   padding: 10px 30px;
   font-size: 1rem;
   text-transform: uppercase;
   background-color: #36a22cc0;
+}
+
+.form-email .submit:hover {
+  box-shadow: 0 0 10px 5px green;
+  cursor: pointer;
 }
 
 .contact-content-info {
@@ -1753,6 +1767,12 @@ footer {
   background-color: #7e7e7e73;
   margin-right: 30px;
   box-shadow: 0px 0px 10px 0.1rem rgba(0, 0, 0, 0.349);
+
+}
+
+.items li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .items li i {
@@ -1864,6 +1884,8 @@ footer {
 /* For Tablet Footer  */
 
 @media (min-width: 491px) and (max-width: 740px) {
+
+  /* contact  */
   .contact {
     width: 100%;
     padding: 30px;
@@ -1880,7 +1902,11 @@ footer {
 
   .contact-content::before {
     top: -66%;
-    right: -54%;
+    right: -61%;
+  }
+
+  .email-title {
+    padding-left: 25px;
   }
 
   .email-title h1 {
@@ -1906,6 +1932,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 40px 0;
   }
 
   .form-email {
@@ -1929,7 +1957,253 @@ footer {
     margin-bottom: 20px;
   }
 
+  .mes2 {
+    display: none;
+  }
 
+  .submit {
+    padding-bottom: 30px;
+    font-size: 0.9rem !important;
+  }
+
+  .contact-content-info {
+    justify-content: space-evenly;
+  }
+
+  .contact-content-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .address li {
+    font-size: 1.1rem;
+  }
+
+  .social h2 {
+    font-size: 1.8rem;
+  }
+
+  .items li i {
+    font-size: 1.4rem;
+  }
+
+  /* copyright  */
+  .copyright {
+    height: 180px;
+  }
+
+  .copyright-content {
+    font-size: 1.1rem;
+  }
+
+  /* back-to-top  */
+  .cd-top {
+    bottom: 10.5%;
+    right: 2%;
+  }
+
+  .cd-top i {
+    font-size: 2.3rem;
+  }
 
 
 }
+
+/* For Mobile Footer  */
+
+@media (max-width: 490px) {
+  .contact {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .contact-title h1 {
+    font-size: 1.1rem;
+  }
+
+  .contact-content {
+    overflow: hidden;
+    padding-right: 0;
+
+    flex-direction: column;
+  }
+
+  .contact-content::before {
+    top: -66%;
+    right: -23%;
+    background-size: 70% auto;
+  }
+
+  .email-title {
+    text-align: center;
+  }
+
+  .email-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .email-title h5 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .form-email input {
+    height: 34px;
+    width: 145px;
+    margin-bottom: 10px;
+  }
+
+  .contact-content-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+  }
+
+  .form-email {
+    text-align: center;
+
+  }
+
+  .form-email .text {
+    height: 30px;
+    padding: 0 27px;
+    
+  }
+
+  br {
+    display: none;
+  }
+
+  .mes {
+    display: none;
+  }
+
+  .mes2 {
+    display: inline;
+    margin-bottom: 20px;
+  }
+
+  .mes1 {
+    display: none;
+  }
+
+  .submit {
+    padding-bottom: 30px;
+    font-size: 0.9rem !important;
+  }
+
+  .contact-content-info {
+    align-items: center;
+    padding-bottom: 20px;
+    
+    position: relative;
+
+    
+  }
+
+  .contact-content-info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 31px;
+    z-index: 100;
+    width: 86%;
+    height: 100%;
+    background: rgb(76 70 70 / 4%) !important;
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%);
+    border-radius: 20px;
+
+    animation: nhapnhay-info 1s linear infinite;
+  }
+
+  @keyframes nhapnhay-info {
+    0% {
+      box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%);
+    }
+
+    50% {
+      box-shadow: none;
+    }
+
+    100% {
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%)
+    }
+  }
+
+  .contact-content-info h1 {
+    font-size: 1.6rem;
+    position: relative;
+    z-index: 101;
+  }
+
+  .address {
+    text-align: center;
+    position: relative;
+    z-index: 101;
+  }
+
+  .address li {
+    font-size: 1rem;
+    position: relative;
+    z-index: 101;
+  }
+
+  .social {
+    text-align: center;
+    margin-top: 20px;
+
+    position: relative;
+    z-index: 101;
+  }
+
+  .social::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    left: 25px;
+    width: 80%;
+    border-top: 2px dashed;
+    height: 2px;
+  }
+
+  .social h2 {
+    font-size: 1.4rem;
+  }
+
+  .items li {
+    margin: 0 10px;
+  }
+
+  .items li i {
+    font-size: 1.4rem;
+  }
+
+  /* copyright  */
+  .copyright {
+    height: 200px;
+  }
+
+  .copyright-content {
+    font-size: 0.9rem;
+  }
+
+  .copyright-social a i {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  /* back-to-top  */
+  .cd-top {
+    bottom: 10.5%;
+    right: 2%;
+
+    padding: 10px;
+  }
+
+  .cd-top i {
+    font-size: 2rem;
+  }
+}
+
