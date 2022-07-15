@@ -695,7 +695,7 @@ li.dropdown-list-item {
   /* carousel  */
 
   .carousel {
-    height: 60vh
+    height: 55vh
   }
 
   .carousel__nav {
@@ -1261,7 +1261,7 @@ section {
 
 @media (min-width: 491px) and (max-width: 740px) {
   .projects {
-
+    
   }
 
   /* projects-title  */
@@ -1327,6 +1327,10 @@ section {
 
   }
 
+  .about-content-area p {
+    font-size: 1rem;
+  }
+
   .block-about {
     flex-direction: column-reverse;
 
@@ -1338,8 +1342,8 @@ section {
 
   .about-image {
     position: absolute !important;
-    top: 27%;
-    right: 4%;
+    top: 24%;
+    right: 3%;
   }
 
   .border-colors img {
@@ -1365,43 +1369,45 @@ section {
   .skills {
     width: 100%;
     gap: 10px;
-    margin: 50px 0;
+    margin: 40px 0 0;
     padding: 0;
     height: 180px;
   }
 
   .skills-number {
     font-size: 3.5rem;
+    margin: 0;
+
   }
 
   .skills-item h5 {
     font-size: 1.2rem;
   }
 
-
-
 }
-
-
 
 /* For Mobile Section  */
 
 @media (max-width: 490px) {
   .projects {
-
+    margin: 20px 0;
   }
 
   /* projects-title  */
   .projects-title {
     width: 85%;
+    margin-top: 50px;
   }
 
   .projects-title h2 {
     font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .projects-title p {
     font-size: 0.8rem;
+    margin: 20px 0;
   }
 
   /* warpper  */  
@@ -1420,7 +1426,7 @@ section {
   }
 
   .cards {
-    padding: 0 20px;
+    padding: 0 20px 40px;
   }
 
   .cols {
@@ -1468,7 +1474,7 @@ section {
   }
 
   .front, .back {
-    box-shadow: none;
+    box-shadow: none ;
   }
 
   .front .inner {
@@ -1555,13 +1561,14 @@ section {
   .skills {
     width: 100%;
     gap: 10px;
-    margin: 50px 0;
+    margin: 40px 0 0;
     padding: 0;
-    height: 130px;
+    height: 120px;
   }
 
   .skills-number {
     font-size: 2.5rem;
+    margin: 0;
   }
 
   .skills-item h5 {
