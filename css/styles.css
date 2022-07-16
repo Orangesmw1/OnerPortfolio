@@ -974,6 +974,18 @@ section {
   padding: 30px;
 }
 
+.back .inner a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  background-color: #36a22c69;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
 .back .inner p {
   font-size: 1.3rem;
 }
@@ -1500,6 +1512,11 @@ section {
   .back .inner p {
     font-size: 0.9rem;
 
+  }
+
+  .back .inner a {
+    font-size: 0.7rem;
+    padding: 7px 10px;
   }
 
   /* about-content-area  */
