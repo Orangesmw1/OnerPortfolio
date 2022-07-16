@@ -73,11 +73,11 @@ dropdownList.addEventListener("mouseover", (e) => {
 
 dropdownList.addEventListener("click", (e) => {
     const clickedItemText = e.target.innerText.toLowerCase().trim();
-    const clickedItemIcon = icons[clickedItemText];
+    // const clickedItemIcon = icons[clickedItemText];
 
-    dropdownTitleIcon.innerHTML = iconTemplate(clickedItemIcon);
-    dropdownTitle.innerHTML = clickedItemText;
-    setDropdownProps(0, 0, 0);
+    // dropdownTitleIcon.innerHTML = iconTemplate(clickedItemIcon);
+    // dropdownTitle.innerHTML = clickedItemText;
+    // setDropdownProps(0, 0, 0);
 });
 
 dropdownList.addEventListener("mousemove", (e) => {

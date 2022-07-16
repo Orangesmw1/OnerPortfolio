@@ -39,7 +39,7 @@
   --transition-time: 0.4s;
   --transition-timing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --border-radius: 1.4rem;
-  --list-button-height: 4.6rem;
+  --list-button-height: 3rem;
   --floating-icon-size: 26;
   --floating-icon-top: 0;
   --floating-icon-left: 0;
@@ -173,7 +173,7 @@ align-items: center;
 .dropdown-button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,6 +266,7 @@ li.dropdown-list-item {
   z-index: 1;
   opacity: var(--list-opacity);
   transition: opacity 0.8s var(--transition-timing);
+  
 }
 
 .floating-icon {
@@ -684,7 +685,7 @@ li.dropdown-list-item {
   }
   
   .dropdown-button {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
   
   .main-button {
@@ -694,7 +695,7 @@ li.dropdown-list-item {
   /* carousel  */
 
   .carousel {
-    height: 55vh
+    height: 70vh
   }
 
   .carousel__nav {
@@ -720,7 +721,7 @@ li.dropdown-list-item {
     width: 55%;
 
     background-size: 190%;
-    background-position: center;
+    background-position: bottom;
   }
 
   .carousel-item__container {
@@ -1484,11 +1485,11 @@ section {
 
 
   .front .inner p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .front .inner span {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .back .inner {
@@ -1497,7 +1498,8 @@ section {
   }
 
   .back .inner p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+
   }
 
   /* about-content-area  */
@@ -1513,7 +1515,7 @@ section {
   }
 
   .about-content h4 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .about-content p {
@@ -1526,11 +1528,11 @@ section {
   }
 
   .about-content-area .about-details div {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .about-content-area .about-details div span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 5px;
   }
 
@@ -1539,17 +1541,16 @@ section {
   }
 
   .border-colors img {
-    max-width: 250px;
-    height: 250px;
+    max-width: 200px;
+    height: 200px;
 
   }
 
   .about-content-area .border-colors::after {
-    width: 74%;
-    height: 91%;
-
+    width: 70%;
+    height: 85%;
     left: 44px;
-    top: 18px;
+    top: 23px;
   }
 
   .about-content-area a {
@@ -1557,7 +1558,7 @@ section {
     width: 150px;
     text-align: center;
     padding: 5px 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .skills {
@@ -1569,12 +1570,12 @@ section {
   }
 
   .skills-number {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 2rem;
+    margin: 5px 0 0;
   }
 
   .skills-item h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
 
