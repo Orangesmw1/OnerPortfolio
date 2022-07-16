@@ -699,7 +699,7 @@ li.dropdown-list-item {
   }
 
   .carousel__nav {
-    left: 27%;
+    left: 24%;
     bottom: 0;
   }
 
@@ -2066,7 +2066,7 @@ footer {
 
   .form-email input {
     height: 34px;
-    width: 145px;
+    width: 143px;
     margin-bottom: 10px;
   }
 
@@ -2207,9 +2207,9 @@ footer {
   }
 
   .copyright-social a i {
-    width: 38px;
-    height: 38px;
-    font-size: 16px;
+    width: 33px;
+    height: 33px;
+    font-size: 13px;
   }
 
   /* back-to-top  */
