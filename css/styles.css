@@ -978,12 +978,14 @@ section {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 25px;
   color: #fff;
   padding: 10px 15px;
   background-color: #36a22c69;
   font-size: 0.9rem;
   border-radius: 20px;
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
 
 .back .inner p {
