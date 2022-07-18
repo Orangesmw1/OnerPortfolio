@@ -2015,10 +2015,15 @@ footer {
   cursor: pointer;
 }
 
+.items li a {
+  text-decoration: none;
+}
+
 .items li i {
   font-size: 30px;
   border: none;
   padding: 5px;
+  color: #000;
 }
 
 /* copyright */
