@@ -2472,9 +2472,9 @@ footer {
     content: "";
     position: absolute;
     top: 0;
-    left: 31px;
+    left: 5%;
     z-index: 100;
-    width: 86%;
+    width: 90%;
     height: 100%;
     background: rgb(76 70 70 / 4%) !important;
     box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%);
