@@ -31,7 +31,7 @@ const listItemTemplate = (text, translateValue) => {
     return `
     <li class="dropdown-list-item">
       <button class="dropdown-button list-button" data-translate-value="${translateValue}%">
-        <span class="text-truncate">${text}</span>
+        <span class="text-truncate"> ${text}</span>
       </button>
     </li>
   `;
